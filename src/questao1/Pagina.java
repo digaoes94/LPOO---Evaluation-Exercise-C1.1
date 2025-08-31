@@ -3,9 +3,9 @@ package questao1;
 public class Pagina {
 	private String titulo, url;
 	
-	public Pagina(String titulo) {
+	public Pagina(String titulo, String url) {
 		this.titulo = titulo;
-		this.url = "/" + titulo.replaceAll("\\s", "").toLowerCase();
+		this.url = url;
 	}
 
 	public String getTitulo() {

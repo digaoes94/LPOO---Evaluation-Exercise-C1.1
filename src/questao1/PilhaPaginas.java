@@ -24,4 +24,8 @@ public class PilhaPaginas {
 	public boolean isEmpty() {
 		return pilhaPag.isEmpty();
 	}
+	
+	public Pagina[] toArray() {
+		return this.toArray();
+	}
 }
