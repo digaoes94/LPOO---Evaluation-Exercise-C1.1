@@ -1,3 +1,5 @@
+// MEMBROS DO GRUPO: Rodrigo Araujo Schenberg
+
 package questao2;
 
 public class filtroInversao {

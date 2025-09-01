@@ -56,28 +56,28 @@ public class Main {
 	private static void paginaAnterior(PilhaPaginas pilha) {
 		if(pilha.isEmpty()) {
 			System.out.println("Erro: Não existe página anterior no momento.");
-			System.out.println();
 		}
 		else {
 			pilha.pop();
 		}
+		
+		System.out.println();
 	}
 	//------------------------------------------------------------------------------------------------
 	private static void paginaAtual(PilhaPaginas pilha) {
 		if(pilha.isEmpty()) {
 			System.out.println("Erro: Não existe página atual no momento.");
-			System.out.println();
 		}
 		else {
 			System.out.println(pilha.peek().toString());
-			System.out.println();
 		}
+		
+		System.out.println();
 	}
 	//------------------------------------------------------------------------------------------------
 	private static void exibirNavegacao(PilhaPaginas pilha) {
 		if(pilha.isEmpty()) {
 			System.out.println("Erro: O histórico de navegação está no momento.");
-			System.out.println();
 		}
 		else {
 			Object[] aux = pilha.toArray();
@@ -85,8 +85,9 @@ public class Main {
 			for(Object p : aux) {
 				System.out.println(p.toString());
 			}
-			System.out.println();
 		}
+		
+		System.out.println();
 	}
 	//------------------------------------------------------------------------------------------------
 	private static int menu(int opcao) {
