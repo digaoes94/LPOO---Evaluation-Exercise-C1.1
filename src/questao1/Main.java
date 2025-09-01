@@ -1,3 +1,5 @@
+// MEMBROS DO GRUPO: Rodrigo Araujo Schenberg
+
 package questao1;
 
 import java.util.Scanner;
@@ -36,36 +38,38 @@ public class Main {
 			}
 		} while(true);
 	}
-	
+	//------------------------------------------------------------------------------------------------
 	private static void paginaNova(PilhaPaginas pilha) {
 		String titulo, url;
 		System.out.println("Favor informar o titulo e a URL da página");
+		
 		System.out.print("Título: ");
-		titulo = scan.nextLine(); System.out.println();
+		titulo = scan.nextLine();
+		
 		System.out.print("URL: ");
-		url = scan.nextLine(); System.out.println();
+		url = scan.nextLine();
+		System.out.println();
 		
 		pilha.push(new Pagina(titulo, url));
 	}
-	
+	//------------------------------------------------------------------------------------------------
 	private static void paginaAnterior(PilhaPaginas pilha) {
 		pilha.pop();
 	}
-	
+	//------------------------------------------------------------------------------------------------
 	private static void paginaAtual(PilhaPaginas pilha) {
 		System.out.println(pilha.peek().toString());
+		System.out.println();
 	}
-
+	//------------------------------------------------------------------------------------------------
 	private static void exibirNavegacao(PilhaPaginas pilha) {
 		Pagina[] aux = pilha.toArray();
 		
 		for(Pagina p : aux) {
 			System.out.println(p.toString());
 		}
-		
-		aux = null;
 	}
-
+	//------------------------------------------------------------------------------------------------
 	private static int menu(int opcao) {
 		System.out.println("Escolha uma opção:");
 		System.out.println("1. Acessar nova página");
@@ -76,6 +80,8 @@ public class Main {
 
 		opcao = scan.nextInt();
 		scan.nextLine();
+		System.out.println();
 		return opcao;
 	}
+	//------------------------------------------------------------------------------------------------
 }

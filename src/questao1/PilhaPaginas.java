@@ -10,7 +10,7 @@ public class PilhaPaginas {
 	}
 	
 	public void push(Pagina p) {
-		pilhaPag.addFirst(p);
+		pilhaPag.push(p);
 	}
 	
 	public Pagina pop() {

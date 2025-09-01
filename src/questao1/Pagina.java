@@ -14,7 +14,9 @@ public class Pagina {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-
+	
+	// imagino que as URLs sejam criadas de forma automática
+	// por questão de segurança deve ser melhot não permitir um setUrl
 	public String getUrl() {
 		return url;
 	}
