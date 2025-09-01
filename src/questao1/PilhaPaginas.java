@@ -1,5 +1,6 @@
 package questao1;
 
+import java.lang.reflect.Array;
 import java.util.LinkedList;
 
 public class PilhaPaginas {
@@ -25,7 +26,7 @@ public class PilhaPaginas {
 		return pilhaPag.isEmpty();
 	}
 	
-	public Pagina[] toArray() {
-		return this.toArray();
+	public Object[] toArray() {
+		return pilhaPag.toArray();
 	}
 }
