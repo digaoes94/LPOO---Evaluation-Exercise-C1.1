@@ -15,7 +15,7 @@ public class filtroInversao {
 		int aux;
 		
 		// PREENCHER LISTA1 ---------------------------------------------------------------------------------------------------
-		for(int a = 0; a < 10; a++) {
+		for(int a = 0; a < 20; a++) {
 			aux = (int) (Math.random() * 20 + 1);
 			lista1.push(aux);
 		}
